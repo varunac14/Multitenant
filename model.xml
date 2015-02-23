@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<alt mandatory="true" name="Base">
+				<and mandatory="true" name="Gantter">
+					<feature name="Tasks"/>
+					<feature name="Resource"/>
+					<feature name="Risk"/>
+					<feature name="Calendars"/>
+				</and>
+				<and mandatory="true" name="Kanban">
+					<and name="Board">
+						<feature name="kanbanTasks"/>
+					</and>
+				</and>
+				<and mandatory="true" name="Backlog">
+					<and name="Theme">
+						<feature name="UserStories"/>
+					</and>
+					<feature name="Sprints"/>
+				</and>
+			</alt>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
